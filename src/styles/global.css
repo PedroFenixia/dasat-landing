@@ -1392,9 +1392,8 @@ ul, ol { list-style: none; }
 .ft-brand em {
   font-family: 'JetBrains Mono', monospace;
   font-style: normal;
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.04em;
   color: var(--ink-2);
 }
 .ft-nav {
