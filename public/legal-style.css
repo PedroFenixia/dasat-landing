@@ -69,11 +69,25 @@ html, body {
 }
 
 .legal-top .brand {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.1;
+  text-align: right;
+}
+.legal-top .brand b {
   font-family: 'Archivo Narrow', 'Inter Tight', sans-serif;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
+}
+.legal-top .brand em {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-style: normal;
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+  margin-top: 2px;
 }
 
 .legal-shell .kicker {
