@@ -516,7 +516,6 @@ ul, ol { list-style: none; }
   padding: var(--gap-y) var(--pad-x);
   max-width: 1680px;
   margin: 0 auto;
-  border-bottom: 1px solid var(--rule);
 }
 .tv-head {
   display: grid;
@@ -613,7 +612,6 @@ ul, ol { list-style: none; }
   padding: var(--gap-y) var(--pad-x);
   max-width: 1680px;
   margin: 0 auto;
-  border-bottom: 1px solid var(--rule);
 }
 .rvb-head {
   display: grid;
