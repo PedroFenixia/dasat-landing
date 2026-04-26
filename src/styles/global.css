@@ -231,7 +231,6 @@ ul, ol { list-style: none; }
   padding: var(--pad-x);
   padding-top: clamp(40px, 6vw, 80px);
   padding-bottom: clamp(20px, 3vw, 40px);
-  border-bottom: 1px solid var(--rule);
   max-width: 1680px;
   margin: 0 auto;
   gap: 24px;
@@ -744,7 +743,6 @@ ul, ol { list-style: none; }
   padding: var(--gap-y) var(--pad-x);
   max-width: 1680px;
   margin: 0 auto;
-  border-bottom: 1px solid var(--rule);
 }
 .caps-head {
   display: grid;
@@ -879,7 +877,6 @@ ul, ol { list-style: none; }
   padding: var(--gap-y) var(--pad-x);
   max-width: 1680px;
   margin: 0 auto;
-  border-bottom: 1px solid var(--rule);
 }
 .proc-head {
   display: grid;
@@ -990,7 +987,6 @@ ul, ol { list-style: none; }
   padding: var(--gap-y) var(--pad-x);
   max-width: 1680px;
   margin: 0 auto;
-  border-bottom: 1px solid var(--rule);
 }
 .brands-head {
   display: flex;
@@ -1041,7 +1037,6 @@ ul, ol { list-style: none; }
   padding: var(--gap-y) var(--pad-x);
   max-width: 1680px;
   margin: 0 auto;
-  border-bottom: 1px solid var(--rule);
 }
 .cov-head {
   display: grid;
@@ -1200,7 +1195,6 @@ ul, ol { list-style: none; }
   padding: var(--gap-y) var(--pad-x);
   max-width: 1680px;
   margin: 0 auto;
-  border-bottom: 1px solid var(--rule);
 }
 .contact-head {
   display: grid;
@@ -1519,7 +1513,7 @@ ul, ol { list-style: none; }
   .hero-marks { position: static; padding: 16px 0 0; flex-wrap: wrap; gap: 12px; }
 
   .lede { font-size: 15.5px; }
-  .ft-nav { grid-template-columns: 1fr; }
+  .ft-nav { grid-template-columns: 1fr 1fr; }
   .form-2 { grid-template-columns: 1fr; }
   .gb-list { grid-template-columns: 1fr; }
   .guarantee-bar { padding: 24px 20px; }
