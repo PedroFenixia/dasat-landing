@@ -43,11 +43,11 @@ export default function ContactForm() {
     setStatus('sending');
     setErrorMsg('');
     try {
-      const res = await fetch('https://formsubmit.co/ajax/david@dasat.es', {
+      const res = await fetch('https://formsubmit.co/ajax/contacto@dasat.es', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          _subject: `[DASAT MOBILE] Solicitud de presupuesto · ${form.device} ${form.brand || ''}`.trim(),
+          _subject: `[DASAT] Solicitud de presupuesto · ${form.device} ${form.brand || ''}`.trim(),
           _template: 'table',
           _captcha: 'false',
           Nombre: form.name,
@@ -100,7 +100,7 @@ export default function ContactForm() {
           {status === 'error' && (
             <div className="form-err" role="alert">
               <b>No se pudo enviar.</b> {errorMsg} <br/>
-              Si el problema persiste, escríbenos directamente a <a href="mailto:david@dasat.es">david@dasat.es</a> o por <a href="https://wa.me/34000000000" target="_blank" rel="noreferrer">WhatsApp</a>.
+              Si el problema persiste, escríbenos directamente a <a href="mailto:contacto@dasat.es">contacto@dasat.es</a> o por <a href="https://wa.me/34622020288" target="_blank" rel="noreferrer">WhatsApp</a>.
             </div>
           )}
           <FormField n="01" label="Nombre y apellidos">
