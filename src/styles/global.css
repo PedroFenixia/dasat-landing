@@ -506,6 +506,10 @@ ul, ol { list-style: none; }
   from { transform: translateX(0); }
   to   { transform: translateX(-33.333%); }
 }
+@media (max-width: 768px) {
+  .ticker-track { animation-duration: 18s; gap: 36px; }
+  .ticker { padding: 36px 0; }
+}
 
 /* ── TV Focus ──────────────────────────────────────────────── */
 .tv-focus {
