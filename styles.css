@@ -468,8 +468,6 @@ ul, ol { list-style: none; }
   background: var(--red-deep);
   color: #fff;
   overflow: hidden;
-  border-top: 1px solid color-mix(in oklab, var(--red-deep) 60%, black);
-  border-bottom: 1px solid color-mix(in oklab, var(--red-deep) 60%, black);
   padding: 28px 0;
 }
 .ticker-track {
