@@ -470,15 +470,15 @@ ul, ol { list-style: none; }
   overflow: hidden;
   border-top: 1px solid color-mix(in oklab, var(--red-deep) 60%, black);
   border-bottom: 1px solid color-mix(in oklab, var(--red-deep) 60%, black);
-  padding: 44px 0;
+  padding: 28px 0;
 }
 .ticker-track {
   display: flex;
-  gap: 72px;
+  gap: 56px;
   white-space: nowrap;
   animation: ticker 38s linear infinite;
   font-family: var(--title-font);
-  font-size: clamp(40px, 5vw, 64px);
+  font-size: clamp(28px, 3.4vw, 44px);
   letter-spacing: 0.02em;
   text-transform: uppercase;
   font-weight: 700;
