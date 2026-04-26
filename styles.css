@@ -468,7 +468,7 @@ ul, ol { list-style: none; }
   background: var(--red-deep);
   color: #fff;
   overflow: hidden;
-  padding: 42px 0;
+  padding: 56px 0;
 }
 .ticker-track {
   display: flex;
