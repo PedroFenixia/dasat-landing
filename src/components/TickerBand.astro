@@ -1,0 +1,11 @@
+---
+const items = ['REPARACIÓN DE TV', '◆', 'MICROSOLDADURA', '◆', 'PLACAS ELECTRÓNICAS', '◆', 'CONSOLAS · PORTÁTILES · TABLETS', '◆', 'VILLENA · ALICANTE', '◆'];
+const tripled = [...items, ...items, ...items];
+---
+<div class="ticker">
+  <div class="ticker-track">
+    {tripled.map((x) => (
+      <span class={x === '◆' ? 'tk-d' : ''}>{x}</span>
+    ))}
+  </div>
+</div>

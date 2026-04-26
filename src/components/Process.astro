@@ -1,0 +1,42 @@
+---
+import Icon from './Icons.astro';
+
+const PROCESS = [
+  { n: '01', t: 'Cita previa', d: 'El taller abre L–V de 17 a 21h. Si te viene mejor otra franja, agendamos cita fuera de ese horario.' },
+  { n: '02', t: 'Diagnóstico', d: 'Banco de pruebas. Te llamamos con presupuesto cerrado.' },
+  { n: '03', t: 'Reparación', d: 'Microsoldadura cuando hace falta. Repuestos originales.' },
+  { n: '04', t: 'Entrega', d: 'Equipo probado, factura y garantía incluida en mano de obra y repuesto de la avería realizada.' },
+];
+---
+<section class="proc" id="proceso">
+  <div class="proc-head">
+    <span class="sec-num">§ 03</span>
+    <h2 class="display sm">
+      Cuatro pasos.<br/>Cero sorpresas.
+    </h2>
+  </div>
+  <ol class="proc-list">
+    {PROCESS.map((p, i) => (
+      <li class="proc-item">
+        <span class="proc-n">{p.n}</span>
+        <h4>{p.t}</h4>
+        <p>{p.d}</p>
+        {i < PROCESS.length - 1 && <span class="proc-arrow"><Icon name="arrow" width="14" height="14" /></span>}
+      </li>
+    ))}
+  </ol>
+
+  <div class="guarantee-bar">
+    <div class="gb-l">
+      <span class="kicker"><span class="dot"></span> Garantía DASAT</span>
+      <h3>3 meses incluidos. <span class="hl">+6 meses</span> ampliables.</h3>
+      <p class="gb-sub">Garantía incluida en <b>mano de obra y repuesto de la avería realizada</b>. Si te interesa, puedes contratar una ampliación de 6 meses adicionales — hasta 9 en total.</p>
+    </div>
+    <ul class="gb-list">
+      <li><Icon name="check" width="14" height="14" /> Garantía en mano de obra y repuesto de la avería realizada</li>
+      <li><Icon name="check" width="14" height="14" /> Repuestos originales o A+</li>
+      <li><Icon name="check" width="14" height="14" /> Factura y resguardo firmados</li>
+      <li><Icon name="cross" width="14" height="14" class="x" /> Presupuesto sin coste si reparamos</li>
+    </ul>
+  </div>
+</section>

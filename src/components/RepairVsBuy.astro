@@ -1,0 +1,75 @@
+---
+import Icon from './Icons.astro';
+
+const rows = [
+  { tier: 'OLED 55″ 4K', model: 'p.ej. Sony A80L · LG C3', nuevo: '1.490 €', repara: 'desde 180 €', save: '−88%' },
+  { tier: 'QLED 65″ 4K', model: 'p.ej. Samsung Q70C',     nuevo: '1.290 €', repara: 'desde 160 €', save: '−87%' },
+  { tier: 'LED 50″ 4K',  model: 'p.ej. Hisense · TCL',     nuevo: '   590 €', repara: 'desde 120 €', save: '−79%' },
+  { tier: 'OLED 77″ 4K', model: 'gama alta',               nuevo: '2.890 €', repara: 'desde 240 €', save: '−91%' },
+];
+---
+<section class="rvb">
+  <div class="rvb-head">
+    <span class="sec-num">§ 01·b</span>
+    <h2 class="display sm">
+      La obsolescencia programada<br/>
+      <span class="hl">no es una opinión.</span>
+    </h2>
+    <p class="lede">
+      Una TV de alta gama de hace tres años cuesta entre 1.500 y 3.000 €. Cuando se le acaba
+      la garantía y falla un componente de 4 €, el fabricante te dice que «no compensa
+      repararla». A nosotros sí nos compensa.
+    </p>
+  </div>
+
+  <div class="rvb-grid">
+    <div class="rvb-table">
+      <div class="rvb-th">
+        <span>GAMA</span>
+        <span>EJEMPLO</span>
+        <span>NUEVA</span>
+        <span>REPARAR</span>
+        <span>AHORRO</span>
+      </div>
+      {rows.map((r) => (
+        <div class="rvb-tr">
+          <span class="rvb-tier">{r.tier}</span>
+          <span class="rvb-model">{r.model}</span>
+          <span class="rvb-new"><s>{r.nuevo}</s></span>
+          <span class="rvb-rep">{r.repara}</span>
+          <span class="rvb-save">{r.save}</span>
+        </div>
+      ))}
+      <p class="rvb-fine">
+        Precios de referencia. El presupuesto exacto depende del diagnóstico y la pieza.
+        Todas las reparaciones incluyen garantía en mano de obra y repuesto de la avería realizada.
+      </p>
+    </div>
+
+    <aside class="rvb-side">
+      <h3>¿Por qué se rompen tan pronto?</h3>
+      <ul>
+        <li>
+          <span>01</span>
+          <p><b>Condensadores baratos</b> en la fuente: un componente de céntimos hace caer un televisor de 2.000 €.</p>
+        </li>
+        <li>
+          <span>02</span>
+          <p><b>Tiras LED subdimensionadas</b>: la retroiluminación se apaga a los pocos años de uso normal.</p>
+        </li>
+        <li>
+          <span>03</span>
+          <p><b>Soldaduras BGA frágiles</b>: el SoC se despega con los ciclos térmicos. Reflujo + reballing y vuelve a la vida.</p>
+        </li>
+        <li>
+          <span>04</span>
+          <p><b>Software sin actualizar</b>: forzando la obsolescencia. A veces es solo firmware.</p>
+        </li>
+      </ul>
+      <div class="rvb-cta">
+        <span class="kicker"><span class="dot"></span> Antes de tirarla</span>
+        <a class="btn-solid w" href="#contacto">Pídenos diagnóstico <Icon name="arrow" width="14" height="14" /></a>
+      </div>
+    </aside>
+  </div>
+</section>

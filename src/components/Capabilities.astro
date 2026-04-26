@@ -1,0 +1,60 @@
+---
+import Icon from './Icons.astro';
+
+const SECONDARY = [
+  { code: 'S-01', icon: 'solder', title: 'Microsoldadura', body: 'Reballing, sustitución de IC, reparación a nivel componente. Estación de aire caliente y microscopio trinocular.' },
+  { code: 'S-02', icon: 'chip', title: 'Reparación de placas', body: 'Diagnóstico de placas electrónicas: cortocircuitos, líneas de alimentación, reflujo BGA, reescritura de eMMC.' },
+] as const;
+
+const TERTIARY = [
+  { code: 'T-01', icon: 'console', title: 'Consolas', body: 'PlayStation · Xbox · Switch. HDMI, lectores, joystick con drift.' },
+  { code: 'T-02', icon: 'laptop', title: 'Portátiles', body: 'Conector DC, teclado, batería, refrigeración y placa.' },
+  { code: 'T-03', icon: 'tablet', title: 'Tablets', body: 'iPad y Android: pantalla, batería, conector de carga.' },
+  { code: 'T-04', icon: 'code', title: 'Software', body: 'Firmware, recuperación de bricks, ajustes de fábrica.' },
+] as const;
+---
+<section class="caps" id="capacidades">
+  <div class="caps-head">
+    <span class="sec-num">§ 02</span>
+    <h2 class="display sm">
+      Microsoldadura y placas.<br/>
+      <span class="hl">Lo que casi nadie hace.</span>
+    </h2>
+  </div>
+
+  <div class="caps-secondary">
+    {SECONDARY.map((s) => (
+      <article class="cap-card">
+        <header>
+          <span class="cap-code">{s.code}</span>
+          <span class="cap-tag">CAPACIDAD ESPECIAL</span>
+        </header>
+        <div class="cap-icon"><Icon name={s.icon} width={84} height={84} /></div>
+        <h3>{s.title}</h3>
+        <p>{s.body}</p>
+        <footer>
+          <span class="cap-bullet">— Estación de aire caliente</span>
+          <span class="cap-bullet">— Microscopio trinocular</span>
+          <span class="cap-bullet">— Programador de eMMC</span>
+        </footer>
+      </article>
+    ))}
+  </div>
+
+  <div class="caps-tertiary">
+    <header class="caps-t-head">
+      <span class="sec-num">§ 02·b</span>
+      <h3>Y también reparamos</h3>
+    </header>
+    <div class="caps-t-grid">
+      {TERTIARY.map((c) => (
+        <div class="cap-mini">
+          <span class="cap-code">{c.code}</span>
+          <div class="cap-mini-icon"><Icon name={c.icon} width={32} height={32} /></div>
+          <h4>{c.title}</h4>
+          <p>{c.body}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

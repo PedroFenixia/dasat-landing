@@ -1,0 +1,52 @@
+---
+import Icon from './Icons.astro';
+
+const TV_FAILS = [
+  { c: 'F-01', t: 'No enciende', d: 'Fuente, condensadores hinchados, MOSFET en corto.' },
+  { c: 'F-02', t: 'Imagen con líneas', d: 'T-CON, flexes COF, panel parcialmente recuperable.' },
+  { c: 'F-03', t: 'Pantalla negra con sonido', d: 'Retroiluminación: tiras LED, driver y barras.' },
+  { c: 'F-04', t: 'Se reinicia sola', d: 'Main board: capacitores secundarios, eMMC con bad blocks.' },
+  { c: 'F-05', t: 'Sin imagen HDMI', d: 'Puertos quemados, IC HDMI, reflujo BGA del SoC.' },
+  { c: 'F-06', t: 'No coge WiFi', d: 'Módulo wireless, pista cortada, antena descalibrada.' },
+];
+---
+<section class="tv-focus" id="tv">
+  <div class="tv-head">
+    <div class="tv-num">§ 01 / Reparación de televisores</div>
+    <h2 class="display sm">
+      <span class="hl">Tu tele no está muerta.</span><br/>
+      Está <em>de parranda.</em>
+    </h2>
+    <p class="lede">
+      Antes de tirarla, déjanos abrirla. La mayoría de averías son fuente, retroiluminación
+      o T-CON: piezas que se cambian. Lo demás —placas, BGA, eMMC— lo resolvemos con
+      microsoldadura en taller.
+    </p>
+  </div>
+
+  <div class="tv-grid">
+    <div class="tv-list-head">
+      <span>CÓDIGO</span>
+      <span>SÍNTOMA</span>
+      <span>CAUSA HABITUAL · DIAGNÓSTICO</span>
+    </div>
+    {TV_FAILS.map((f, i) => (
+      <div class="tv-row">
+        <span class="tv-row-c">{f.c}</span>
+        <span class="tv-row-t">{f.t}</span>
+        <span class="tv-row-d">{f.d}</span>
+        <span class="tv-row-i">{String(i + 1).padStart(2, '0')}/{TV_FAILS.length}</span>
+      </div>
+    ))}
+  </div>
+
+  <div class="tv-foot">
+    <div class="tv-foot-l">
+      <span class="kicker"><span class="dot"></span> Marcas más frecuentes en taller</span>
+      <p class="brands-inline">Samsung · Apple · Hisense · LG · Sony · Hitachi · Toshiba · Telefunken · Philips · Grundig</p>
+    </div>
+    <a class="btn-solid lg" href="#contacto">
+      ¿Tu avería no está aquí? Pregúntanos <Icon name="arrow" width="14" height="14" />
+    </a>
+  </div>
+</section>

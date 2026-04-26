@@ -1,0 +1,65 @@
+---
+import Icon from './Icons.astro';
+import TVDrawing from './TVDrawing.astro';
+---
+<section class="hero" id="top">
+  <aside class="hero-side">
+    <div class="hero-side-top">
+      <span>Sección</span><b>00 / Inicio</b>
+    </div>
+    <div class="hero-side-bot">
+      <span>● Taller abierto</span>
+    </div>
+  </aside>
+
+  <div class="hero-main">
+    <div class="hero-eyebrow">
+      <span class="dash">———</span>
+      <span>Servicio técnico de electrónica · Villena, Alicante</span>
+    </div>
+
+    <h1 class="display hero-title">
+      <span class="t-line t-l1">Reparamos tu</span>
+      <span class="t-line t-l2"><em>televisor.</em></span>
+    </h1>
+
+    <div class="hero-foot">
+      <div class="hero-foot-l">
+        <p class="lede">
+          Diagnóstico honesto y presupuesto cerrado antes de tocar la placa.
+          Microsoldadura y reparación a nivel componente cuando hace falta.
+          <strong> No enviamos a ningún sitio: reparamos nosotros, en nuestro taller.</strong>
+          <br/>
+          Presupuesto sin coste si reparamos.
+        </p>
+        <div class="hero-cta">
+          <a class="btn-solid" href="#contacto">
+            Pedir presupuesto <Icon name="arrow" width="14" height="14" />
+          </a>
+          <a class="btn-line" href="https://wa.me/34000000000" target="_blank" rel="noreferrer">
+            <Icon name="whatsapp" width="14" height="14" /> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-foot-r">
+        <dl class="hero-stats">
+          <div><dt>+5</dt><dd>años en el sector</dd></div>
+          <div><dt>3+6</dt><dd>meses de garantía</dd></div>
+          <div><dt>0 €</dt><dd>presupuesto si reparas</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-art" aria-hidden="true">
+    <TVDrawing />
+  </div>
+
+  <div class="hero-marks">
+    <span class="mk">A · 01</span>
+    <span class="mk">REV · 03</span>
+    <span class="mk">SC · 1:1</span>
+    <span class="mk mk-down"><Icon name="arrowDown" width="11" height="11" /> SCROLL</span>
+  </div>
+</section>
