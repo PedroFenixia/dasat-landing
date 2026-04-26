@@ -414,7 +414,7 @@ function TVFocus() {
     <section className="tv-focus" id="tv">
       <div className="tv-head">
         <div className="tv-num">§ 01 / Reparación de televisores</div>
-        <h2 className="display">
+        <h2 className="display sm">
           <span className="hl">Tu tele no está muerta.</span><br/>
           Está <em>de parranda.</em>
         </h2>
