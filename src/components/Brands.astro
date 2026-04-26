@@ -1,0 +1,17 @@
+---
+const BRANDS = ['Samsung', 'Apple', 'Hisense', 'LG', 'Sony', 'Hitachi', 'Toshiba', 'Telefunken', 'Philips', 'Grundig'];
+---
+<section class="brands">
+  <div class="brands-head">
+    <span class="sec-num">§ ·</span>
+    <span class="kicker"><span class="dot"></span> Marcas que cruzan el banco de trabajo</span>
+  </div>
+  <ul class="brands-row">
+    {BRANDS.map((b, i) => (
+      <li>
+        <span class="b-i">{String(i + 1).padStart(2, '0')}</span>
+        <span class="b-n">{b}</span>
+      </li>
+    ))}
+  </ul>
+</section>

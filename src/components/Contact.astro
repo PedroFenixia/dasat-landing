@@ -1,0 +1,37 @@
+---
+import Icon from './Icons.astro';
+import ContactForm from './ContactForm.tsx';
+---
+<section class="contact" id="contacto">
+  <div class="contact-head">
+    <span class="sec-num">§ 05</span>
+    <h2 class="display sm">
+      Cuéntanos qué le pasa.<br/>
+      <span class="hl">Presupuesto sin coste si reparamos.</span>
+    </h2>
+  </div>
+
+  <div class="contact-grid">
+    <ContactForm client:load />
+
+    <aside class="contact-side">
+      <div class="side-block">
+        <span class="kicker"><Icon name="whatsapp" width="14" height="14" /> Vía rápida</span>
+        <h3>WhatsApp directo</h3>
+        <p>El técnico responde en horario laboral. Adjunta una foto del equipo.</p>
+        <a class="btn-solid w" href="https://wa.me/34000000000" target="_blank" rel="noreferrer">
+          Abrir WhatsApp <Icon name="arrow" width="14" height="14" />
+        </a>
+      </div>
+      <div class="side-block">
+        <span class="kicker"><Icon name="spark" width="14" height="14" /> Sin compromiso</span>
+        <ul class="check-list">
+          <li><Icon name="check" width="14" height="14" /> Diagnóstico previo a la reparación</li>
+          <li><Icon name="check" width="14" height="14" /> Presupuesto cerrado por escrito</li>
+          <li><Icon name="check" width="14" height="14" /> Sin coste si aceptas la reparación*</li>
+        </ul>
+        <em class="fine">* La valoración meramente orientativa lleva una pequeña tasa de diagnóstico, descontable de la factura final si reparas.</em>
+      </div>
+    </aside>
+  </div>
+</section>

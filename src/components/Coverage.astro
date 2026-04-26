@@ -1,0 +1,80 @@
+---
+import Icon from './Icons.astro';
+import DasatMark from './DasatMark.astro';
+import ShopFront from './ShopFront.astro';
+---
+<section class="cov" id="cobertura">
+  <div class="cov-head">
+    <span class="sec-num">§ 04</span>
+    <h2 class="display sm">
+      Atención en taller.<br/>
+      <span class="hl">Villena, Alicante.</span>
+    </h2>
+    <p class="lede">
+      Recibimos los equipos en nuestro local. Trae tu televisor, placa o consola y
+      te damos resguardo firmado. Comarca del Alto Vinalopó.
+    </p>
+  </div>
+
+  <div class="cov-grid">
+    <div class="cov-map">
+      <iframe
+        title="Mapa DASAT MOBILE — Villena"
+        src="https://www.google.com/maps?q=Escultor+Navarro+Santafe+64+Villena&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <div class="cov-map-tag">
+        <span class="dot"></span>
+        <b>DASAT MOBILE</b>
+        <em>L–V · 17–21h · citas a convenir</em>
+      </div>
+    </div>
+
+    <div class="cov-photo">
+      <div class="cov-photo-frame">
+        <ShopFront />
+        <div class="cov-photo-cap">
+          <span>FACHADA · ESCULTOR NAVARRO SANTAFÉ, 64</span>
+          <em>VILLENA · 03400</em>
+        </div>
+      </div>
+    </div>
+
+    <aside class="cov-card">
+      <header>
+        <DasatMark size={36} />
+        <div>
+          <b>DASAT MOBILE</b>
+          <em>Servicio técnico · Villena</em>
+        </div>
+      </header>
+      <div class="cov-row">
+        <span>Dirección</span>
+        <p>C/ Escultor Navarro Santafé, 64<br/>03400 Villena · Alicante</p>
+      </div>
+      <div class="cov-row">
+        <span>Horario</span>
+        <p>
+          <b>Apertura al público</b><br/>
+          Lunes a viernes · 17:00–21:00<br/>
+          <em>Citas también fuera de ese horario, previa solicitud.</em><br/>
+          Sábado y domingo · cerrado
+        </p>
+      </div>
+      <div class="cov-row">
+        <span>Contacto</span>
+        <p>+34 000 000 000<br/>david@dasat.es</p>
+      </div>
+      <div class="cov-actions">
+        <a class="btn-solid w" href="https://www.google.com/maps/dir/?api=1&destination=Escultor+Navarro+Santafe+64+Villena" target="_blank" rel="noreferrer">
+          <Icon name="arrow" width="14" height="14" /> Cómo llegar
+        </a>
+        <a class="btn-line w" href="https://www.google.com/maps?q=Escultor+Navarro+Santafe+64+Villena" target="_blank" rel="noreferrer">
+          <Icon name="pin" width="14" height="14" /> Abrir en Maps
+        </a>
+      </div>
+    </aside>
+  </div>
+</section>

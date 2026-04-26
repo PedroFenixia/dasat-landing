@@ -4,6 +4,25 @@
    Sin gradientes. Sin glassmorphism. Sin tarjetas blandas.
    ───────────────────────────────────────────────────────────────── */
 
+:root {
+  --red: oklch(67% 0.21 25);
+  --red-soft: oklch(67% 0.21 25 / 0.22);
+  --red-deep: oklch(48% 0.20 25);
+  --bg: #0a0a0b;
+  --bg-2: #101012;
+  --bg-3: #16161a;
+  --ink: #ededea;
+  --ink-2: rgba(237,237,234,.82);
+  --ink-3: rgba(237,237,234,.62);
+  --rule: rgba(237,237,234,.24);
+  --rule-2: rgba(237,237,234,.12);
+  --title-font: "Archivo Narrow", "Bebas Neue", "Oswald", sans-serif;
+  --title-weight: 700;
+  --title-tracking: -0.01em;
+  --gap-y: 96px;
+  --pad-x: 40px;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { background: var(--bg); color: var(--ink); }
 body {
