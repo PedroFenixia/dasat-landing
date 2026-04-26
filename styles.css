@@ -211,7 +211,7 @@ ul, ol { list-style: none; }
   min-height: 0;
   padding: var(--pad-x);
   padding-top: clamp(40px, 6vw, 80px);
-  padding-bottom: clamp(40px, 6vw, 80px);
+  padding-bottom: clamp(20px, 3vw, 40px);
   border-bottom: 1px solid var(--rule);
   max-width: 1680px;
   margin: 0 auto;
