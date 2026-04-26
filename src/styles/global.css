@@ -1486,7 +1486,7 @@ ul, ol { list-style: none; }
   .hd-row {
     gap: 10px;
     grid-template-columns: auto 1fr;
-    padding: 12px var(--pad-x);
+    padding: 18px var(--pad-x);
   }
   .hd-brand-txt em { display: none; }
   .hd-brand-txt b { font-size: 16px; }
